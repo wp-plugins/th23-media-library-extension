@@ -28,7 +28,9 @@ No questions yet!
 
 == Screenshots ==
 
-n/a
+1. Media Library: Added option to filter the media items based on the post they are attached to – and to re-attach them to another post, if required
+2. Posts and Pages: Direct access to all medias attached to a certain post via the context menu
+3. Media Library: Re-Attach option
 
 == Changelog ==
 
