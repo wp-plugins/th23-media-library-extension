@@ -1,15 +1,18 @@
 === Plugin Name ===
 Contributors: th23
+Donate link: http://th23.net/th23-media-library-extension
 Tags: admin, media library, filter
-Requires at least: 3.0.0
-Tested up to: 3.0.3
-Stable tag: 0.2
+Requires at least: 3.8.0
+Tested up to: 4.2.2
+Stable tag: 1.0.0
+License: GPLv2 only
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds advanced filter options to the Media Library - to fully leverage it's capabilities, additionally install the Shuffle plugin.
+Adds advanced filter options to the Media Library, attachment links to edit posts/ pages overview.
 
 == Description ==
 
-Adds advanced filter options to the Media Library - to fully leverage it's capabilities, additionally install the [Shuffle](http://wordpress.org/extend/plugins/shuffle/) plugin.
+Adds advanced filter options to the Media Library, attachment links to edit posts/ pages overview.
 
 == Installation ==
 
@@ -28,6 +31,10 @@ No questions yet!
 n/a
 
 == Changelog ==
+
+= 1.0 =
+* Complete change in function(ality)
+* Not depending on "Shuffle" plugin anymore
 
 = 0.2 =
 * First public release
