@@ -1,21 +1,14 @@
 <?php
 /*
 Plugin Name: th23 Media Library Extension
-Plugin URI: http://th23.net/th23-media-library-extension
+Plugin URI: http://th23.net/
 Description: Adds advanced filter options to the Media Library, attachment links to edit posts/ pages overview.
 Version: 1.0.0
 Author: Thorsten Hartmann (th23)
 Author URI: http://th23.net
-Text Domain: th23_media_library
-License: GPLv2 only
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Copyright 2010-2015, Thorsten Hartmann (th23)
+Copyright 2014, Thorsten Hartmann (th23)
 http://th23.net/
-
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2, as published by the Free Software Foundation. You may NOT assume that you can use any other version of the GPL.
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-This license and terms apply for the Basic part of this program as distributed, but NOT for the separately distributed Professional add-on!
 */
 
 define('TH23_MEDIA_LIBRARY_BASEDIR', '/' . str_replace('/' . basename(__FILE__), '', plugin_basename(__FILE__)));
@@ -25,8 +18,6 @@ define('TH23_MEDIA_LIBRARY_BASEDIR', '/' . str_replace('/' . basename(__FILE__),
 function th23_media_library_init() {
 	// localize
 	load_plugin_textdomain('th23_media_library', WP_PLUGIN_DIR . TH23_MEDIA_LIBRARY_BASEDIR . '/lang/', TH23_MEDIA_LIBRARY_BASEDIR . '/lang/');
-	// add "Private" tag on plugin overview page
-	add_filter('plugin_row_meta', 'th23_media_library_version', 10, 2);
 	// add link to edit posts/ pages overview directing to filtered attachments
 	add_filter('post_row_actions', 'th23_media_library_add_posts_pages_media_link', 10, 2);
 	add_filter('page_row_actions', 'th23_media_library_add_posts_pages_media_link', 10, 2);
@@ -40,14 +31,6 @@ function th23_media_library_init() {
 	add_action('manage_media_custom_column', 'th23_media_library_columns_attached_to', 10, 2);
 }
 add_action('admin_init', 'th23_media_library_init');
-
-// Add "Private" tag on plugin overview page
-function th23_media_library_version($links, $file) {
-	if(plugin_basename(__FILE__) == $file) {
-		$links[0] = $links[0] . ' <strong><i style="color: #FF9900;">Private</i></strong>';
-	}
-	return $links;
-}
 
 // add link to edit posts/ pages overview directing to filtered attachments
 function th23_media_library_add_posts_pages_media_link($actions, $post) {
