@@ -3,7 +3,7 @@
 Plugin Name: th23 Media Library Extension
 Plugin URI: http://th23.net/
 Description: Adds advanced filter options to the Media Library, attachment links to edit posts/ pages overview.
-Version: 1.0.0
+Version: 1.0.2
 Author: Thorsten Hartmann (th23)
 Author URI: http://th23.net
 

@@ -4,7 +4,7 @@ Donate link: http://th23.net/th23-media-library-extension
 Tags: admin, media library, filter
 Requires at least: 3.8.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 only
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ No questions yet!
 3. Media Library: Re-Attach option
 
 == Changelog ==
+
+= 1.0.2 =
+* Fix: Adjust version numbering mess - note so self: make "version bump" checklist
 
 = 1.0.1 =
 * Fix: Remove tag from plugins admin page
